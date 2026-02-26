@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { Moon, Sun, ArrowRight, Activity, Code2, Rocket, CheckCircle2, Linkedin, Instagram } from "lucide-react";
+import { Moon, Sun, ArrowRight, Activity, Code2, Rocket, CheckCircle2, Linkedin, Instagram, Mail} from "lucide-react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import GradientBlinds from "@/components/ui/gradient-blinds";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
@@ -435,31 +435,51 @@ async function scaleStartup(idea) {
           </motion.div>
         </section>
 
-        {/* Mega Footer */}
-        <footer className="relative pt-12 md:pt-24 border-t border-neutral-200 dark:border-white/10 overflow-hidden bg-neutral-50 dark:bg-black flex flex-col justify-between">
+{/* Mega Footer */}
+        <footer className="relative pt-16 md:pt-24 border-t border-neutral-200 dark:border-white/10 overflow-hidden bg-neutral-50 dark:bg-black flex flex-col justify-between">
           
-          {/* Social Links & Copyright Bar */}
-          <div className="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 mb-8 md:mb-20 relative z-20">
-            <p className="text-neutral-500 dark:text-neutral-400 text-sm font-medium order-2 md:order-1 text-center md:text-left">
-              © {new Date().getFullYear()} Daemons Build. Engineered for scale.
-            </p>
+          {/* Minimal Social & Contact Bar */}
+          <div className="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-end gap-10 mb-16 md:mb-24 relative z-20">
             
+            {/* Contact Stack & Copyright (Left on desktop, bottom on mobile) */}
+            <div className="flex flex-col items-center md:items-start gap-3 order-2 md:order-1 text-center md:text-left">
+              
+              {/* Raw Contact Info Above Copyright */}
+              <div className="flex flex-col items-center md:items-start gap-1.5 text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 font-medium mb-2">
+                <strong>Contact Us:</strong>
+                <a href="https://wa.me/919923171129" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900 dark:hover:text-white transition-colors">
+                  +91 99231 71129
+                </a>
+                <a href="https://wa.me/919284028578" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900 dark:hover:text-white transition-colors">
+                  +91 92840 28578
+                </a>
+              </div>
+
+              {/* Copyright Text */}
+              <p className="text-neutral-500 dark:text-neutral-400 text-sm font-medium">
+                © {new Date().getFullYear()} Daemons Build. Engineered for scale.
+              </p>
+            </div>
+            
+            {/* Social Icons (Right on desktop, top on mobile) */}
             <div className="flex items-center gap-6 order-1 md:order-2">
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors" aria-label="LinkedIn">
+              <Link href="mailto:daemonsbuild@gmail.com" className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors" aria-label="Email">
+                <Mail className="w-5 h-5" />
+              </Link>
+              <Link href="http://linkedin.com/company/daemons-build/" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </Link>
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors" aria-label="Instagram">
+              <Link href="https://instagram.com/daemons.build" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </Link>
             </div>
           </div>
 
           {/* Massive Glowing Text Block */}
-            <div className="w-full relative flex items-end justify-center pointer-events-none select-none overflow-visible mt-10 pb-[10vw] md:pb-[5vw]">
+          <div className="w-full relative flex items-end justify-center pointer-events-none select-none overflow-visible mt-2 pb-[10vw] md:pb-[5vw]">
             {/* Ambient glow behind the text */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-1/2 bg-neutral-400/20 dark:bg-white/10 blur-[80px] md:blur-[100px] rounded-full z-0"></div>
             
-            {/* FIX: Cranked mobile up to 19.5vw for perfect edge-to-edge fit, keeping laptop at 18vw */}
             <h2 className="text-[19.5vw] md:text-[18vw] leading-[0.85] font-bold tracking-tighter text-neutral-900 dark:text-white relative z-10 drop-shadow-sm dark:drop-shadow-[0_0_40px_rgba(255,255,255,0.2)] whitespace-nowrap">
               Daemons<span className="text-neutral-400 dark:text-neutral-600">.</span>
             </h2>
