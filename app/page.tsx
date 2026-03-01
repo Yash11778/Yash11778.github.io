@@ -36,7 +36,7 @@ export default function Home() {
     },
     {
       title: "Python Backtesting & Algo Trading",
-      description: "Institutional-grade backtesting architecture for the stock market. We automate your trading strategies to focus on generating alpha.",
+      description: "We automate your trading strategies to focus on generating alpha.",
       link: "#algo-trading"
     },
     {
@@ -46,7 +46,7 @@ export default function Home() {
     },
     {
       title: "Low-Level Systems (Rust)",
-      description: "Memory-safe, high-performance backend systems. When milliseconds matter, we engineer solutions close to the metal.",
+      description: "When milliseconds matter, we engineer solutions close to the metal.",
       link: "#rust-systems"
     },
     {
@@ -68,7 +68,7 @@ export default function Home() {
   const faqs = [
     {
       q: "Do you work with early-stage startups?",
-      a: "Yes. We act as the elite engineering wing for founders who have the vision but need technical execution to get to market and scale fast."
+      a: "Yes. We act as the dedicated technical execution team for founders who have the vision but need technical execution to get to market and scale fast."
     },
     {
       q: "Who owns the code and IP?",
@@ -186,7 +186,7 @@ export default function Home() {
             className="relative z-10 flex flex-col items-center mt-12 sm:mt-20 pointer-events-none w-full"
           >
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/80 dark:bg-black/50 border border-neutral-200 dark:border-white/10 text-[10px] sm:text-xs text-neutral-500 dark:text-neutral-400 mb-6 uppercase tracking-widest backdrop-blur-md shadow-sm text-center">
-              General Software Engineering & Architecture
+              High-Velocity Engineering
             </div>
             
             <h1 className="text-[2.5rem] leading-[1.1] sm:text-6xl md:text-8xl font-bold tracking-tighter text-neutral-900 dark:text-white text-center max-w-5xl drop-shadow-sm dark:drop-shadow-none">
@@ -197,7 +197,7 @@ export default function Home() {
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl text-center mt-6 mb-10 font-light leading-relaxed px-2">
-              Daemons Build is a specialized technical agency. Whether you need high-scale Web2 infrastructure, automated Python trading pipelines, or systems built close to the metal, we ship production-ready code.
+              Daemons Build is a technical agency. Whether you need rapid MVPs, AI automation, or complex API integrations, we ship production-ready code.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto pointer-events-auto px-4 sm:px-0">
@@ -248,12 +248,12 @@ export default function Home() {
             <div className="w-12 h-px md:w-px md:h-12 bg-neutral-300 dark:bg-white/10"></div>
             <div>
               <h4 className="text-3xl font-bold text-neutral-900 dark:text-white mb-1">0 to MVP</h4>
-              <p className="text-sm font-medium text-neutral-500 uppercase tracking-wider">In Record Time</p>
+              <p className="text-sm font-medium text-neutral-500 uppercase tracking-wider">Shipping Speed</p>
             </div>
             <div className="w-12 h-px md:w-px md:h-12 bg-neutral-300 dark:bg-white/10"></div>
             <div>
               <h4 className="text-3xl font-bold text-neutral-900 dark:text-white mb-1">Direct</h4>
-              <p className="text-sm font-medium text-neutral-500 uppercase tracking-wider">Engineer Access</p>
+              <p className="text-sm font-medium text-neutral-500 uppercase tracking-wider">Dev Communication</p>
             </div>
           </div>
         </motion.section>
@@ -276,9 +276,9 @@ export default function Home() {
             <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-px bg-neutral-200 dark:bg-white/10"></div>
             
             {[
-              { icon: <Activity className="w-6 h-6 text-neutral-900 dark:text-white" />, title: "01. Architecture Audit", desc: "We get on a call, dissect your business goals, and identify the exact technical stack and database schema needed to scale without tech debt." },
-              { icon: <Code2 className="w-6 h-6 text-neutral-900 dark:text-white" />, title: "02. The Blueprint", desc: "We provide a clear, phased roadmap. Whether it's setting up an automated Python backtesting rig or building a MERN SaaS, you know exactly what happens when." },
-              { icon: <Rocket className="w-6 h-6 text-white dark:text-black" />, title: "03. Ruthless Execution", desc: "We act as your internal heavy-hitters. We write the code, set up the CI/CD pipelines, and deploy the infrastructure while you focus on selling the product.", isSolid: true }
+              { icon: <Activity className="w-6 h-6 text-neutral-900 dark:text-white" />, title: "01. Architecture Audit", desc: "We tear down your business requirements and architect the exact technical stack and database schema needed to hit the market fast, with a foundation built to scale." },
+              { icon: <Code2 className="w-6 h-6 text-neutral-900 dark:text-white" />, title: "02. The Blueprint", desc: "We deliver a ruthless, phased roadmap. Whether we are building an AI-integrated backtesting engine, deploying Solana smart contracts, or launching a scalable Web2 platform, you know exactly what ships and when." },
+              { icon: <Rocket className="w-6 h-6 text-neutral-900 dark:text-white" />, title: "03. Ruthless Execution", desc: "We act as your elite engineering wing. We write the code, automate the CI/CD pipelines, and deploy the infrastructure. You focus on selling the product. We handle the complexity", isSolid: false }
             ].map((step, idx) => (
               <motion.div 
                 key={idx}
@@ -375,7 +375,7 @@ async function scaleStartup(idea) {
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white tracking-tight mb-4">Our Arsenal</h2>
             <p className="text-neutral-600 dark:text-neutral-400 font-light text-base sm:text-lg max-w-2xl mx-auto">
-              We are generalists who master the hard stuff. Full-stack, algorithmic pipelines, and everything in between.
+              We are versatile developers. We build across the entire stack so you don&apos;t have to hire five different specialists to launch your product.
             </p>
           </motion.div>
           <HoverEffect items={services} className="max-w-6xl mx-auto" />
