@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useSyncExternalStore } from "react";
 
 import {
   LoadingScreen,
@@ -16,12 +16,17 @@ import {
   Footer,
 } from "@/components/sections";
 
+const emptySubscribe = () => () => {};
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,  // client
+    () => false, // server
+  );
 
   useEffect(() => {
-    setMounted(true);
     const timer = setTimeout(() => setIsLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
