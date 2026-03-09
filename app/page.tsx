@@ -10,6 +10,7 @@ import {
   MetricsBanner,
   ProcessSection,
   PhilosophySection,
+  ProjectsSection,
   ServicesSection,
   FAQSection,
   CTASection,
@@ -42,6 +43,7 @@ export default function Home() {
         <MetricsBanner />
         <ProcessSection />
         <PhilosophySection />
+        <ProjectsSection />
         <ServicesSection />
         <FAQSection />
         <CTASection />

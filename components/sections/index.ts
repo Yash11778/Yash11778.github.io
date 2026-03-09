@@ -5,6 +5,7 @@ export { default as TechMarquee } from "./TechMarquee";
 export { default as MetricsBanner } from "./MetricsBanner";
 export { default as ProcessSection } from "./ProcessSection";
 export { default as PhilosophySection } from "./PhilosophySection";
+export { default as ProjectsSection } from "./ProjectsSection";
 export { default as ServicesSection } from "./ServicesSection";
 export { default as FAQSection } from "./FAQSection";
 export { default as CTASection } from "./CTASection";
