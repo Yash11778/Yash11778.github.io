@@ -114,6 +114,29 @@ export const PHILOSOPHY_POINTS = [
   "Direct communication with engineers",
 ] as const;
 
+// ─── Projects ────────────────────────────────────────────────────────
+
+export interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  images: string[];
+}
+
+export const PROJECTS: Project[] = [
+  {
+    title: "QuantLabs",
+    description:
+      "NLP-based backtesting engine and portfolio rebalancer. Dynamically adjusts strategies using live news feeds and real-time market sentiment analysis to generate alpha.",
+    tags: ["Python", "NLP", "Algo Trading", "Backtesting", "Sentiment Analysis"],
+    images: [
+      "/quantlabs/quantlabs.png",
+      "/quantlabs/quantlabs2.png",
+      "/quantlabs/quantlabs3.png",
+    ],
+  },
+];
+
 // ─── Social / Contact ────────────────────────────────────────────────
 
 export const SOCIAL_LINKS = {
