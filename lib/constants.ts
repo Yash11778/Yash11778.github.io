@@ -135,6 +135,13 @@ export const PROJECTS: Project[] = [
       "/quantlabs/quantlabs3.png",
     ],
   },
+  {
+    title: "Ekonos",
+    description:
+      "A protocol on Solana enabling fractional ownership of real-world assets. Tokenize, trade, and manage fractions of high-value assets with on-chain transparency and instant settlement.",
+    tags: ["Solana", "Web3", "DeFi", "Tokenization", "Rust"],
+    images: ["/ekonos/ekonos.png"],
+  },
 ];
 
 // ─── Social / Contact ────────────────────────────────────────────────
