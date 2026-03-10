@@ -40,6 +40,12 @@ export default function Navbar({ isLoading }: NavbarProps) {
           Process
         </Link>
         <Link
+          href="/projects"
+          className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors hidden md:block"
+        >
+          Projects
+        </Link>
+        <Link
           href="#services"
           className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors hidden sm:block"
         >
